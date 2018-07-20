@@ -1,6 +1,6 @@
 {
   "name": "callbag-default-if-empty",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "👜 Callbag operator which emits a given value when source completes without emitting any value.",
   "main": "dist/callbag-default-if-empty.js",
   "module": "dist/callbag-default-if-empty.esm.js",
