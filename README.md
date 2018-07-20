@@ -12,7 +12,7 @@ import interval from 'callbag-interval'
 import pipe from 'callbag-pipe'
 import takeUntil from 'callbag-take-until'
 
-spipe(
+pipe(
   fromEvent(document, 'click'),
   takeUntil(interval(5000)),
   defaultIfEmpty('no clicks'),
