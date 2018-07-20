@@ -1,0 +1,52 @@
+{
+  "name": "callbag-default-if-empty",
+  "version": "0.0.0",
+  "description": "👜 Callbag operator which emits a given value when source completes without emitting any value.",
+  "main": "dist/callbag-default-if-empty.js",
+  "module": "dist/callbag-default-if-empty.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest",
+    "precommit": "lint-staged",
+    "prebuild": "rimraf dist",
+    "build": "rollup -c",
+    "preversion": "npm test",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andarist/callbag-default-if-empty.git"
+  },
+  "keywords": [
+    "callbag",
+    "callbags"
+  ],
+  "author": "Mateusz Burzyński <mateuszburzynski@gmail.com> (https://github.com/Andarist)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Andarist/callbag-default-if-empty/issues"
+  },
+  "homepage": "https://github.com/Andarist/callbag-default-if-empty#readme",
+  "devDependencies": {
+    "@babel/core": "7.0.0-beta.54",
+    "@babel/preset-env": "7.0.0-beta.54",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^22.4.3",
+    "callbag-empty": "^1.0.0",
+    "callbag-for-each": "^1.0.1",
+    "callbag-from-iter": "^1.2.0",
+    "callbag-pipe": "^1.1.1",
+    "callbag-tap": "^1.1.0",
+    "callbag-tap-up": "^1.0.1",
+    "callbag-throw-error": "^1.0.0",
+    "husky": "^0.14.3",
+    "jest": "^22.4.3",
+    "lint-staged": "^7.0.0",
+    "prettier": "^1.13.7",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.62.0",
+    "rollup-plugin-babel": "4.0.0-beta.7"
+  }
+}
